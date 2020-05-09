@@ -3,11 +3,13 @@ package com.example.moviesexample.viewmodel
 import androidx.lifecycle.*
 import com.example.moviesexample.model.Movie
 import com.example.moviesexample.model.repository.Repository
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 class MovieListViewModel(private val moviesRepository: Repository<Movie>): ViewModel() {
 
-    private lateinit var moviesMutableLiveData: MutableLiveData<List<Movie>>
+    private val moviesMutableLiveData = MutableLiveData<List<Movie>>()
     val moviesLiveData: LiveData<List<Movie>>
         get() = moviesMutableLiveData
 
@@ -16,9 +18,8 @@ class MovieListViewModel(private val moviesRepository: Repository<Movie>): ViewM
     }
 
     private fun refreshMoviesList() {
-        moviesRepository.fetch()
-        viewModelScope.launch {
-            moviesMutableLiveData = moviesRepository.fetch().asLiveData() as MutableLiveData<List<Movie>>
+        viewModelScope.launch(Dispatchers.Default) {
+            moviesRepository.fetch().collect { moviesMutableLiveData.postValue(it) }
         }
     }
 
