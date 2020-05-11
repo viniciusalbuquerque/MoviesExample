@@ -1,4 +1,4 @@
 package com.example.moviesexample.model.data
 
-class Movie(id: String, val name: String) : Data(id)
+data class Movie(val id: String, val name: String)
 

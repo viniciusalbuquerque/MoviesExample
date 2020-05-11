@@ -22,15 +22,26 @@ class MovieListViewModel(private val moviesRepository: Repository<Movie>): ViewM
     private fun refreshMoviesList() {
         AndroidLogger.degub("refreshMoviesList called!")
         viewModelScope.launch(Dispatchers.Default) {
-            moviesRepository.getById("tt3896198").collect {
-                moviesMutableLiveData.postValue(listOf(it))
-            }
-//            moviesRepository.fetch().collect { moviesMutableLiveData.postValue(it) }
+            moviesRepository.fetch().collect { moviesMutableLiveData.postValue(it) }
         }
     }
 
     fun fetchMovies() {
         refreshMoviesList()
+    }
+
+    fun searchMovie(searchString: String) {
+        viewModelScope.launch(Dispatchers.Default) {
+            moviesRepository.searchMovie("galaxy").collect { moviesMutableLiveData.postValue(it) }
+        }
+    }
+
+    fun getMovieById(id: String) {
+        viewModelScope.launch {
+            moviesRepository.getById("tt3896198").collect {
+                moviesMutableLiveData.postValue(listOf(it))
+            }
+        }
     }
 
 }
