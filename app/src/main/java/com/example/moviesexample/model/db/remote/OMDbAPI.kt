@@ -1,21 +1,19 @@
 package com.example.moviesexample.model.db.remote
 
 import com.example.moviesexample.model.data.MovieRemote
-import com.example.moviesexample.util.AndroidLogger
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.lang.Exception
 
-class OMDbAPI(val apiKey: String):
+class OMDbAPI(private val apiKey: String):
     DBService<MovieRemote> {
 
-    private val URL = "http://www.omdbapi.com/"
-    //val URL = "http://www.omdbapi.com/"
-    val retrofitService: OMDbRetrofitService
+    private val url = "http://www.omdbapi.com/"
+    private val retrofitService: OMDbRetrofitService
 
     init {
         val retrofit = Retrofit.Builder()
-            .baseUrl(URL)
+            .baseUrl(url)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

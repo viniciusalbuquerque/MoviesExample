@@ -2,11 +2,13 @@ package com.example.moviesexample.model.repository
 
 import com.example.moviesexample.model.data.Movie
 import com.example.moviesexample.model.data.MovieRemote
+import com.example.moviesexample.model.db.local.LocalDatabase
+import com.example.moviesexample.model.db.local.MoviesRoomDao
 import com.example.moviesexample.model.db.remote.DBService
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
-class MoviesRepository(private val remoteAPI: DBService<MovieRemote>): Repository<Movie> {
+class MoviesRepository(private val localDB: MoviesRoomDao, private val remoteAPI: DBService<MovieRemote>): Repository<Movie> {
 
     override suspend fun fetch() = flow {
         emit(remoteAPI.get().map {
@@ -20,8 +22,7 @@ class MoviesRepository(private val remoteAPI: DBService<MovieRemote>): Repositor
         emit(movie)
     }
 
-    override fun getFavorites() {
-    }
+    override suspend fun getFavorites() = localDB.getAll()
 
     override suspend fun searchMovie(searchString: String) = flow {
         emit(remoteAPI.search(searchString).map {
