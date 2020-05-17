@@ -15,10 +15,6 @@ class MovieListViewModel(private val moviesRepository: Repository<Movie>): ViewM
     val moviesLiveData: LiveData<List<Movie>>
         get() = moviesMutableLiveData
 
-    init {
-        refreshMoviesList()
-    }
-
     private fun refreshMoviesList() {
         AndroidLogger.degub("refreshMoviesList called!")
         viewModelScope.launch(Dispatchers.Default) {
