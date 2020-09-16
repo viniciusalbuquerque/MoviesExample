@@ -17,6 +17,7 @@ import com.example.moviesexample.viewmodel.ViewModelProvider
 
 class ListMoviesFragment: Fragment() {
 
+// test comment
     private lateinit var binding: MovieListFragmentBinding
     private lateinit var viewModel: MovieListViewModel
     private lateinit var adapter:MovieListAdapter
