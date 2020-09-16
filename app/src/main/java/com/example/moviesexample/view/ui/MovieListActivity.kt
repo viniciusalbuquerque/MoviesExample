@@ -15,6 +15,7 @@ class MovieListActivity: AppCompatActivity() {
 
         val movieListFragment = ListMoviesFragment()
 //        val favMoviesFragment = FavoriteMoviesFragment()
+// testing
         supportFragmentManager.beginTransaction().apply {
             add(binding.fragmentContainerView.id, movieListFragment)
         }.commit()
