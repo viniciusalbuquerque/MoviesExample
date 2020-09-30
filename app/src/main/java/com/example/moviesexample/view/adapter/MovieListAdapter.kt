@@ -1,6 +1,7 @@
 package com.example.moviesexample.view.adapter
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviesexample.R
@@ -36,6 +37,13 @@ class MovieListAdapter(): RecyclerView.Adapter<MovieListAdapter.ViewHolder>() {
 
         fun buildView(movie: Movie) {
             binding.itemMovieName.text = movie.name
+
+            if (movie.imdbRating == null) {
+                binding.itemMovieReview.visibility = View.GONE
+                binding.labelMovieReview.visibility = View.GONE
+            } else {
+                binding.itemMovieReview.text = movie.imdbRating
+            }
         }
     }
 }
