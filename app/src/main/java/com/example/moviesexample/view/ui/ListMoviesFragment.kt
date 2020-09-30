@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.moviesexample.databinding.MovieListFragmentBinding
 import com.example.moviesexample.model.data.Movie
 import com.example.moviesexample.util.AndroidLogger
+import com.example.moviesexample.util.Logger
 import com.example.moviesexample.view.adapter.MovieListAdapter
 import com.example.moviesexample.viewmodel.MovieListViewModel
 import com.example.moviesexample.viewmodel.ViewModelProvider
@@ -19,7 +20,8 @@ class ListMoviesFragment: Fragment() {
 
     private lateinit var binding: MovieListFragmentBinding
     private lateinit var viewModel: MovieListViewModel
-    private lateinit var adapter:MovieListAdapter
+    private lateinit var adapter: MovieListAdapter
+    private lateinit var logger: Logger
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -33,10 +35,11 @@ class ListMoviesFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider.createMovieListViewModel(view.context.applicationContext, this)
+        logger = AndroidLogger()
 
         buildRecyclerView()
         viewModel.moviesLiveData.observe(viewLifecycleOwner, Observer {
-            AndroidLogger.degub(it.toString())
+            logger.debug(it.toString())
             refreshList(it)
         })
 
