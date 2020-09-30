@@ -6,9 +6,9 @@ import com.example.moviesexample.model.data.Movie
 import kotlinx.coroutines.flow.Flow
 
 @Dao
-interface MoviesRoomDao {
+interface MoviesRoomDao : LocalDatabase<Movie> {
 
     @Query("Select * FROM movie")
-    fun getAll(): Flow<List<Movie>>
+    override suspend fun getAll(): List<Movie>
 
 }

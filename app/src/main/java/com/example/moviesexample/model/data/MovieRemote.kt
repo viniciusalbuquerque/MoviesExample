@@ -9,4 +9,10 @@ data class MovieRemote(
     val id: String,
     @SerializedName("Title")
     @Expose
-    val title: String)
+    val title: String,
+    @SerializedName("imdbRating")
+    @Expose
+    val imdbRating: String,
+    @SerializedName("Poster")
+    @Expose
+    val posterUrl: String)
