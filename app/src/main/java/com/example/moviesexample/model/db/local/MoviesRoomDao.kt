@@ -9,6 +9,6 @@ import kotlinx.coroutines.flow.Flow
 interface MoviesRoomDao {
 
     @Query("Select * FROM movie")
-    fun getAll(): Flow<List<Movie>>
+    suspend fun getAll(): List<Movie>
 
 }

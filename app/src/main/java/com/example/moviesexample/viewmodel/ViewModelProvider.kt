@@ -8,6 +8,7 @@ import com.example.moviesexample.model.data.Movie
 import com.example.moviesexample.model.repository.Repository
 import com.example.moviesexample.model.repository.RepositoryFactory
 import com.example.moviesexample.util.AndroidLogger
+import com.example.moviesexample.util.Logger
 import com.example.moviesexample.view.ui.FavoriteMoviesFragment
 import com.example.moviesexample.view.ui.ListMoviesFragment
 import com.example.moviesexample.view.ui.MovieListActivity
@@ -37,7 +38,7 @@ class ViewModelProvider {
 
         private fun getFactory(repository: Repository<Movie>): ViewModelFactory<Movie> {
             return factory ?: synchronized(this) {
-                val fact = ViewModelFactory(repository)
+                val fact = ViewModelFactory(repository, AndroidLogger())
                 factory = fact
                 return fact
             }
