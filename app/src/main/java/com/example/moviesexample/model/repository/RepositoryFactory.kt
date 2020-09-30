@@ -5,6 +5,7 @@ import com.example.moviesexample.R
 import com.example.moviesexample.model.data.Movie
 import com.example.moviesexample.model.db.local.MoviesRoomDatabase
 import com.example.moviesexample.model.db.remote.OMDbAPI
+import com.example.moviesexample.util.AndroidLogger
 
 class RepositoryFactory {
 
@@ -18,7 +19,8 @@ class RepositoryFactory {
                 val movieDatabase = MoviesRoomDatabase.getDatabase(context)
                 val repo = MoviesRepository(
                     movieDatabase.moviesDao(),
-                    OMDbAPI(context.getString(R.string.apiKey)))
+                    OMDbAPI(context.getString(R.string.apiKey)),
+                    AndroidLogger())
                 repository = repo
                 return repo
             }

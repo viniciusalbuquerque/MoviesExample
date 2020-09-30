@@ -8,5 +8,7 @@ data class Movie(
     @PrimaryKey
     val id: String,
     val name: String,
-    var favorited: Boolean = false)
+    val imdbRating: String?,
+    var favorited: Boolean = false,
+    var posterUrl: String = "")
 
