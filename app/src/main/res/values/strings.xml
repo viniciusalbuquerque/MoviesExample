@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MoviesExample</string>
+    <string name="label_imdb">IMDB:</string>
+    <string name="content_description_movie_thumbnail">Movie Thumbnail</string>
 </resources>
