@@ -1,0 +1,274 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "daee23d7_ab836ea5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 8
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-03T12:38:12Z",
+      "side": 1,
+      "message": "Remover o WIP",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 3
+      },
+      "revId": "1258b84ae5872f619a874ca8064a4449d048c5d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7dd1277d_56fe99a6",
+        "filename": "app/src/main/java/com/example/moviesexample/model/repository/MoviesRepository.kt",
+        "patchSetId": 8
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-03T12:38:12Z",
+      "side": 1,
+      "message": "Remova esse import, pois, ele não está sendo utilizado.",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 51
+      },
+      "revId": "1258b84ae5872f619a874ca8064a4449d048c5d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5ce0c3c_839b2e10",
+        "filename": "app/src/main/java/com/example/moviesexample/model/repository/MoviesRepository.kt",
+        "patchSetId": 8
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-03T12:38:12Z",
+      "side": 1,
+      "message": "Eu acho que você pode criar uma função para fazer esse mapeamento dentro modelo, e depois chamar algo como it.toMovie()",
+      "range": {
+        "startLine": 23,
+        "startChar": 12,
+        "endLine": 23,
+        "endChar": 75
+      },
+      "revId": "1258b84ae5872f619a874ca8064a4449d048c5d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "651f7cb1_afad8abc",
+        "filename": "app/src/main/java/com/example/moviesexample/model/repository/MoviesRepository.kt",
+        "patchSetId": 8
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-03T12:38:12Z",
+      "side": 1,
+      "message": "Mesmo comentário acima.",
+      "range": {
+        "startLine": 28,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 55
+      },
+      "revId": "1258b84ae5872f619a874ca8064a4449d048c5d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c89c2137_152a7b1f",
+        "filename": "app/src/main/java/com/example/moviesexample/model/repository/MoviesRepository.kt",
+        "patchSetId": 8
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-03T12:38:12Z",
+      "side": 1,
+      "message": "Mesmo comentário acima",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 75
+      },
+      "revId": "1258b84ae5872f619a874ca8064a4449d048c5d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f8bf88a5_4a56b25a",
+        "filename": "app/src/main/java/com/example/moviesexample/util/Logger.kt",
+        "patchSetId": 8
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-03T12:38:12Z",
+      "side": 1,
+      "message": "Poderíamos transformar isso numa interface funcional?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 1
+      },
+      "revId": "1258b84ae5872f619a874ca8064a4449d048c5d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "81184a20_e641bfed",
+        "filename": "app/src/main/java/com/example/moviesexample/view/listeners/EndlessScrollCallback.kt",
+        "patchSetId": 8
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-03T12:38:12Z",
+      "side": 1,
+      "message": "Podemos transformar isso numa interface funcional?",
+      "revId": "1258b84ae5872f619a874ca8064a4449d048c5d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7e89c066_7691a8e2",
+        "filename": "app/src/main/java/com/example/moviesexample/view/listeners/EndlessScrollListener.kt",
+        "patchSetId": 8
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-03T12:38:12Z",
+      "side": 1,
+      "message": "Podemos abstrair isso numa interface?",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 58
+      },
+      "revId": "1258b84ae5872f619a874ca8064a4449d048c5d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fad05b48_6bcd63e5",
+        "filename": "app/src/test/java/com/example/moviesexample/model/db/remote/MockedRemoteAPI.kt",
+        "patchSetId": 8
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-03T12:38:12Z",
+      "side": 1,
+      "message": "Aplique um filtro aqui pra saber o retorno correto.",
+      "range": {
+        "startLine": 15,
+        "startChar": 67,
+        "endLine": 15,
+        "endChar": 82
+      },
+      "revId": "1258b84ae5872f619a874ca8064a4449d048c5d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7d21227c_442a4515",
+        "filename": "app/src/test/java/com/example/moviesexample/model/db/remote/MockedRemoteAPI.kt",
+        "patchSetId": 8
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-03T12:38:12Z",
+      "side": 1,
+      "message": "Pode também adicionar aqui se tem algum filme com o id passado",
+      "range": {
+        "startLine": 17,
+        "startChar": 47,
+        "endLine": 17,
+        "endChar": 62
+      },
+      "revId": "1258b84ae5872f619a874ca8064a4449d048c5d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "430d76e4_06115028",
+        "filename": "app/src/test/java/com/example/moviesexample/model/repository/MovieRepositoryMocked.kt",
+        "patchSetId": 8
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-03T12:38:12Z",
+      "side": 1,
+      "message": "Mesmo comentário da página anterior.",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 65
+      },
+      "revId": "1258b84ae5872f619a874ca8064a4449d048c5d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b1775fee_cdcc14cd",
+        "filename": "app/src/test/java/com/example/moviesexample/viewmodel/MovieListViewModelTest.kt",
+        "patchSetId": 8
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-03T12:38:12Z",
+      "side": 1,
+      "message": "Crie um método para isso",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 25
+      },
+      "revId": "1258b84ae5872f619a874ca8064a4449d048c5d2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
