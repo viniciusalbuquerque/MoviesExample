@@ -1,0 +1,159 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22473e39_52691560",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-23T19:33:15Z",
+      "side": 1,
+      "message": "Please adjust my comments",
+      "revId": "8275bb303e4ee862cf53b474b7dc56c2b37592ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c7392a7_c0312541",
+        "filename": "app/src/main/java/com/example/moviesexample/model/repository/MoviesRepository.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-23T19:33:15Z",
+      "side": 1,
+      "message": "Is it necessary?",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 30
+      },
+      "revId": "8275bb303e4ee862cf53b474b7dc56c2b37592ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "586132ff_466086c8",
+        "filename": "app/src/main/java/com/example/moviesexample/view/ui/FavoriteMoviesFragment.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-23T19:33:15Z",
+      "side": 1,
+      "message": "Please add TAG name",
+      "range": {
+        "startLine": 44,
+        "startChar": 25,
+        "endLine": 44,
+        "endChar": 27
+      },
+      "revId": "8275bb303e4ee862cf53b474b7dc56c2b37592ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5a69fd2_d3cd3c81",
+        "filename": "app/src/main/java/com/example/moviesexample/viewmodel/FavoriteMoviesViewModel.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-23T19:33:15Z",
+      "side": 1,
+      "message": "Add TAG",
+      "range": {
+        "startLine": 22,
+        "startChar": 22,
+        "endLine": 22,
+        "endChar": 23
+      },
+      "revId": "8275bb303e4ee862cf53b474b7dc56c2b37592ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b854d26_bab2e625",
+        "filename": "app/src/main/java/com/example/moviesexample/viewmodel/MovieListViewModel.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-23T19:33:15Z",
+      "side": 1,
+      "message": "Please remove it after implementation",
+      "range": {
+        "startLine": 35,
+        "startChar": 44,
+        "endLine": 35,
+        "endChar": 50
+      },
+      "revId": "8275bb303e4ee862cf53b474b7dc56c2b37592ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8d1226e2_379c75fe",
+        "filename": "app/src/main/res/layout/movie_list_item.xml",
+        "patchSetId": 10
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-23T19:33:15Z",
+      "side": 1,
+      "message": "Remove this space",
+      "range": {
+        "startLine": 2,
+        "startChar": 50,
+        "endLine": 2,
+        "endChar": 51
+      },
+      "revId": "8275bb303e4ee862cf53b474b7dc56c2b37592ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6493898c_adda2a66",
+        "filename": "build.gradle",
+        "patchSetId": 10
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1014760
+      },
+      "writtenOn": "2021-02-23T19:33:15Z",
+      "side": 1,
+      "message": "Remove these white spaces",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 8
+      },
+      "revId": "8275bb303e4ee862cf53b474b7dc56c2b37592ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
