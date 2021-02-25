@@ -5,6 +5,7 @@ import com.example.moviesexample.R
 import com.example.moviesexample.model.data.Movie
 import com.example.moviesexample.model.db.local.MoviesRoomDatabase
 import com.example.moviesexample.model.db.remote.OMDbAPI
+import com.example.moviesexample.util.AndroidLogger
 
 class RepositoryFactory {
 

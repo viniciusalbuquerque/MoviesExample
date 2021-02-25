@@ -2,12 +2,8 @@ package com.example.moviesexample.util
 
 import android.util.Log
 
-class AndroidLogger {
-    companion object {
-
-        fun degub(message: String) {
-            Log.d("vinicius", message)
-        }
-
+class AndroidLogger: Logger {
+    override fun debug(tag: String, message: String) {
+        Log.d("vinicius", "[$tag] $message")
     }
 }
