@@ -1,26 +1,14 @@
 package com.example.moviesexample.model.repository
 
-import android.util.Log
 import androidx.annotation.VisibleForTesting
 import com.example.moviesexample.model.data.Movie
-import com.example.moviesexample.model.data.MovieRemote
-import com.example.moviesexample.model.db.local.MoviesRoomDao
-import com.example.moviesexample.model.db.remote.DBService
-import com.example.moviesexample.model.db.remote.MockedRemoteAPI
-import com.example.moviesexample.model.db.remote.OMDbAPI
-import com.example.moviesexample.util.AndroidLogger
-import com.example.moviesexample.util.Logger
+import com.example.moviesexample.model.datasource.remote.omdb.MovieOMDb
+import com.example.moviesexample.model.datasource.local.room.MoviesRoomDao
+import com.example.moviesexample.model.datasource.remote.MockedRemoteAPI
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.Before
 import org.junit.Test
-import org.mockito.BDDMockito
-import org.mockito.Mock
-import org.mockito.Mockito
-import org.mockito.Mockito.`when`
 import org.mockito.Mockito.mock
 
 class RepositoryTest {
@@ -48,7 +36,7 @@ class RepositoryTest {
     }
 
     @VisibleForTesting
-    private fun movieEqualsMovieRemote(movie: Movie, movieRemote: MovieRemote): Boolean {
+    private fun movieEqualsMovieRemote(movie: Movie, movieRemote: MovieOMDb): Boolean {
         return movie.id == movieRemote.id &&
                 movie.name == movieRemote.title &&
                 movie.posterUrl == movieRemote.posterUrl

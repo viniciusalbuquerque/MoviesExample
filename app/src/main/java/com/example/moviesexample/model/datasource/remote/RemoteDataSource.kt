@@ -1,6 +1,6 @@
-package com.example.moviesexample.model.db.remote
+package com.example.moviesexample.model.datasource.remote
 
-interface DBService<T> {
+interface RemoteDataSource<T> {
     suspend fun get(page: Int = 1) : List<T>
     suspend fun search(searchString: String, page: Int = 1) : List<T>
     suspend fun getById(id: String): T

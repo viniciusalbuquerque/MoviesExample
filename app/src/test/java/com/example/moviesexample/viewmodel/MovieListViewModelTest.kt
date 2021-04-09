@@ -4,17 +4,12 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import com.example.moviesexample.model.data.Movie
 import com.example.moviesexample.model.repository.MovieRepositoryMocked
-import com.example.moviesexample.model.repository.MoviesRepository
-import com.example.moviesexample.model.repository.Repository
-import com.example.moviesexample.util.AndroidLogger
 import com.example.moviesexample.util.Logger
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.test.runBlockingTest
+import com.example.moviesexample.viewmodel.listmovies.MovieListViewModel
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.mockito.Mock
-import org.mockito.Mockito.mock
 import org.mockito.Mockito.verify
 import org.mockito.MockitoAnnotations
 

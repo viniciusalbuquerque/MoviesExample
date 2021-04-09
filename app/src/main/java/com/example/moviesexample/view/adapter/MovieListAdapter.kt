@@ -12,7 +12,7 @@ import com.example.moviesexample.R
 import com.example.moviesexample.databinding.MovieListItemBinding
 import com.example.moviesexample.model.data.Movie
 
-class MovieListAdapter(): ListAdapter<Movie, MovieListAdapter.ViewHolder>(MovieDiffUtilCallback()) {
+class MovieListAdapter(private val movieClickedListener: OnMovieItemClickListener): ListAdapter<Movie, MovieListAdapter.ViewHolder>(MovieDiffUtilCallback()) {
 
     private lateinit var binding: MovieListItemBinding
 
@@ -24,6 +24,9 @@ class MovieListAdapter(): ListAdapter<Movie, MovieListAdapter.ViewHolder>(MovieD
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.buildView(getItem(position))
+        holder.itemView.setOnClickListener {
+            movieClickedListener.movieClicked(currentList[position])
+        }
     }
 
     fun submitMovies(list: List<Movie>) {
@@ -51,6 +54,9 @@ class MovieListAdapter(): ListAdapter<Movie, MovieListAdapter.ViewHolder>(MovieD
                     .placeholder(R.drawable.ic_launcher_background)
                     .circleCrop()
                     .into(binding.itemMovieImage)
+            }
+
+            binding.root.setOnClickListener {
             }
         }
     }

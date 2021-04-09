@@ -14,8 +14,6 @@ import com.example.moviesexample.util.AndroidLogger
 import com.example.moviesexample.util.Logger
 import com.example.moviesexample.view.adapter.MovieListAdapter
 import com.example.moviesexample.viewmodel.FavoriteMoviesViewModel
-import com.example.moviesexample.viewmodel.MovieListViewModel
-import com.example.moviesexample.viewmodel.ViewModelProvider
 
 
 class FavoriteMoviesFragment: Fragment() {
@@ -37,7 +35,7 @@ class FavoriteMoviesFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel = ViewModelProvider.createFavMoviesViewModel(view.context.applicationContext, this)
+        //viewModel = ViewModelProvider.createFavMoviesViewModel(view.context.applicationContext, this)
         logger = AndroidLogger()
 
         buildRecyclerView()
@@ -52,7 +50,9 @@ class FavoriteMoviesFragment: Fragment() {
     }
 
     private fun buildRecyclerView() {
-        adapter = MovieListAdapter()
+        adapter = MovieListAdapter({
+            logger.debug(TAG, "fav clicked: $it")
+        })
         binding.movieListRecyclerView.layoutManager = LinearLayoutManager(context)
         binding.movieListRecyclerView.adapter = adapter
     }

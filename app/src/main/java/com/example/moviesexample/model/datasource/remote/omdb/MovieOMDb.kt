@@ -1,9 +1,10 @@
-package com.example.moviesexample.model.data
+package com.example.moviesexample.model.datasource.remote.omdb
 
+import com.example.moviesexample.model.datasource.remote.MovieRemote
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class MovieRemote(
+data class MovieOMDb(
     @SerializedName("imdbID")
     @Expose
     val id: String,
@@ -15,7 +16,4 @@ class MovieRemote(
     val imdbRating: String,
     @SerializedName("Poster")
     @Expose
-    val posterUrl: String) {
-
-    fun toMovie() = Movie(id, title, imdbRating, posterUrl = posterUrl)
-}
+    val posterUrl: String): MovieRemote

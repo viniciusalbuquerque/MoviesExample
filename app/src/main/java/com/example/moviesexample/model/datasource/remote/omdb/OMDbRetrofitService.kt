@@ -1,13 +1,8 @@
-package com.example.moviesexample.model.db.remote
+package com.example.moviesexample.model.datasource.remote.omdb
 
-import com.example.moviesexample.model.data.MovieRemote
-import com.example.moviesexample.model.data.OMDbSearchResponse
-import kotlinx.coroutines.flow.Flow
-import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Headers
-import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface OMDbRetrofitService {
@@ -21,7 +16,7 @@ interface OMDbRetrofitService {
 
     @Headers("Accept: application/json")
     @GET("/")
-    suspend fun getMovieById(@Query("apiKey") apiKey: String, @Query("i") id:String): Response<MovieRemote>
+    suspend fun getMovieById(@Query("apiKey") apiKey: String, @Query("i") id:String): Response<MovieOMDb>
 
     @Headers("Accept: application/json")
     @GET("/")

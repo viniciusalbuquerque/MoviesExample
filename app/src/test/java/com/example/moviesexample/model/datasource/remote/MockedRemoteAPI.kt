@@ -1,12 +1,12 @@
-package com.example.moviesexample.model.db.remote
+package com.example.moviesexample.model.datasource.remote
 
-import com.example.moviesexample.model.data.MovieRemote
+import com.example.moviesexample.model.datasource.remote.omdb.MovieOMDb
 
-class MockedRemoteAPI : DBService<MovieRemote> {
+class MockedRemoteAPI : RemoteDataSource<MovieOMDb> {
     companion object {
         public val movieRemoteList = listOf(
-            MovieRemote("1", "Title1", "", ""),
-            MovieRemote("2", "Title2", "", "")
+            MovieOMDb("1", "Title1", "", ""),
+            MovieOMDb("2", "Title2", "", "")
         )
     }
 

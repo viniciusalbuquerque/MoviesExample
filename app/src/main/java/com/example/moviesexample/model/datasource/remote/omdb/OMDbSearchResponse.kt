@@ -1,8 +1,8 @@
-package com.example.moviesexample.model.data
+package com.example.moviesexample.model.datasource.remote.omdb
 
 import com.google.gson.annotations.SerializedName
 
 data class OMDbSearchResponse(
     @SerializedName("Search")
-    val movieRemoteList: List<MovieRemote>
+    val movieRemoteList: List<MovieOMDb>
 )
